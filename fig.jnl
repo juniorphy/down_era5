@@ -1,0 +1,49 @@
+
+use anom_202309_avg_10N-10S.nc !anom_202309.nc
+
+set w/asp=0.8
+
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Sep2023 - avg 10S:10N' omega[y=-10:10@ave,x=150E:40W,z=100:1000]
+
+frame/file=anom_omega_202409_walker.gif
+
+pause
+use anom_202309_avg_290-320.nc
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Sep2023 - avg 70W:40W' omega[y=-25:40,x=0@ave,z=100:1000]
+
+frame/file=anom_omega_202409_hadley.gif
+
+pause
+
+use anom_202310_avg_10N-10S.nc
+
+set w/asp=0.8
+
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Oct2023 - avg 10S:10N' omega[y=-10:10@ave,x=150E:40W,z=100:1000]
+
+frame/file=anom_omega_202410_walker.gif
+
+pause
+
+use anom_202310_avg_290-320.nc
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Oct2023 - avg 70W:40W' omega[y=-25:40,x=0@ave,z=100:1000]
+
+frame/file=anom_omega_202410_hadley.gif
+
+pause
+use anom_202311_avg_10N-10S.nc
+set w/asp=0.8
+
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Nov2023 - avg 10S:10N' omega[y=-10:10@ave,x=150E:40W,z=100:1000]
+
+frame/file=anom_omega_202411_walker.gif
+
+pause
+
+use anom_202311_avg_290-320.nc
+
+fill/pal=inv_white_centered_junior/levels=(-inf)(-0.03,0.03,0.005)(inf)/title='Anom OMEGA (hPa/s) Nov2023 - avg 70W:40W' omega[y=-25:40,x=0@ave,z=100:1000]
+
+frame/file=anom_omega_202411_hadley.gif
+
+
