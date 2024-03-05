@@ -37,22 +37,23 @@ def get_era(var=str, pres_levels=list, year=int, months=list):
             months
         ,
         'time': '00:00',
+        'grid': [0.5, 0.5],
 #        'area': [
 #            90, -180, -90,
 #                 180,
 #        ],
         'format': 'netcdf',
     },
-    f'era5_sst_monthly_sep-oct-nov_{year}.nc')
+    f'era5_sst_monthly_{year}.nc')
 
 year=args.year
 
 print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-
+months=[]
 for YY in range(year,year+1):
     print("Download year: ", YY,'\n')
-
-    get_era('sea_surface_temperature', None, year=YY, months=['09','10','11'])
+    months = [f"{ff:02d}" for ff in range(1,13)]
+    get_era('sea_surface_temperature', None, year=YY, months=months)
     print()
 
 print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
