@@ -44,7 +44,7 @@ def get_era(var=str, pres_levels=list, year=int, months=list):
 #        ],
         'format': 'netcdf',
     },
-    f'era5_sst_monthly_{year}.nc')
+    f'era5_sst_monthly_{year}_0p5.nc')
 
 year=args.year
 
