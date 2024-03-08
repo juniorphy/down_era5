@@ -2,4 +2,5 @@
 *.gif
 *.jnl
 */*.nc
+.DS_Store
 

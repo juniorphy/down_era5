@@ -7,7 +7,6 @@ parser.add_argument('--year',type=int,
 
 args = parser.parse_args()
 
-
 c = cdsapi.Client()
 
 def get_era(var=str, pres_levels=list, year=int, months=list):
